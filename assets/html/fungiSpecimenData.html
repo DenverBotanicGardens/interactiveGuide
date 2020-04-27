@@ -1,0 +1,104 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Fungal Specimen Data Submission</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="fungiSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="fungiSpecimenData.html"  >Data Submission</a>
+	<a href="fungiSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="fungiSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="fungiSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Submitting Fungal Specimen Data</h1>
+	<img src="../media/DBGData.jpg" class="sidenavImg2" ></img>
+<p>Data should be transcribed from mycology cards into a spreadsheet template for bulk upload.
+		</br>
+		</br>
+		Volunteers submitting data should fill out the <a href="../resources/TEMPLATE_DataFields_Vouchers_Fungi_Volunteers.xlsx">Template Spreadsheet for Fungal Specimen Data</a> to submit data for specimens.
+
+		</br>
+		</br>
+		Save your spreadsheets here: <b>Q:\Research\All_Herbaria\CollectionsDataInProgress</b>. </br>Use the naming convention <b>YYYYMMDD_FirstInitialLastName_ProjectName_Vouchers</b>
+		</br>
+		</br>
+		Once complete, contact the Database Associate for review and upload. Data will be uploaded to SEINet and in some cases the Research Database.
+		</br>
+		</br>
+	</p>
+	
+	
+	<button class="collapsible">Templates</button>
+		<div class ="content">
+		<p>	</br>
+<a href= "../resources/TEMPLATE_DataFields_Vouchers_Fungi_Volunteers.xlsx" class="DocButton">Template Spreadsheet for Volunteers Entering Data</a>	
+<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Fungi.xlsx" class="DocButton">Template Spreadsheet for Scientists' Voucher Collections</a>		</p>
+		
+		</p>
+		</br>
+		</div>	
+	
+	<button class="collapsible">Data Submission</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "" class="DocButton">Filling Out Specimen Data Spreadsheet Prototcol</a>
+	<a href= "../resources/DBG_DataEntryFromCards_Protocol.pdf" class="DocButton">Data Entry into MycoPortal From Cards Protocol</a>
+	<a href= "../resources/DBG_ProcessingStatus_Protocol.pdf" class="DocButton">DBG Processing Status Protocol</a>
+		</p>
+		</br>
+		</div>	
+
+	<button class="collapsible">Uploading Data</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DBG_SpecimenData_BatchUpload_Protocol.pdf" class="DocButton">DBG Specimen Data Batch Upload Protocol</a>
+		</p>
+		</br>		
+		</div>
+		
+<button class="collapsible">Web</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "http://www.mycoportal.org" class="WebButton">MycoPortal</a>
+	<a href= "https://research.botanicgardens.org/admin/login.php" class="WebButton">Research Database</a>	
+		</p>
+		</br>		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

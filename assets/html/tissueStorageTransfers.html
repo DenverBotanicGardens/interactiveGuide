@@ -1,0 +1,76 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Tissue Sample Storage and Transfers</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="tissueCollecting.html"  >Tissue Collection</a>
+		<a href="tissueData.html"  >Data Submission</a>
+		<a href="tissueProcessing.html"  >Tissue Processing</a>
+		<a href="tissueStorageTransfers.html"  >Tissue Storage and Transfers</a>
+		<a href="DNA.html"  >Extracting DNA</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Tissue Sample Storage and Transfers</h1>
+	<video  autoplay loop muted>
+  <source src="../media/tissueStorage.mp4" type="video/mp4">
+  <source src="../media/tissueStorage.mp4" type="video/ogg">
+</video>
+<h2>Storage</h2>
+<p>
+Tissue samples are stored in sealed plastic bins within the Bioreposiroty located in the laboratory.</br></br>
+Bins are labeled with both a number and a snapshot of the contents.</br></br>
+Relative humidity within bins is tracked and recorded on a paper sheet located in the cabinet.
+
+</p>
+
+<button class="collapsible">Tissue Storage Resources</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/Biorepository_TissueHumidityMonitoringSheet.pdf" class="DocButton">Tissue RH Humidity Tracking Sheet</a>
+	<a href= "../resources/Biorepository_BinLabels.pub" class="DocButton">Bin Contents Labels</a>
+		</p>
+		</br>		
+		</div>
+		
+<h2>Transfers</h2>
+<p>
+Tissue samples are available on <a href="http://www.ggbn.org">GGBN</a> and may be loaned or transferred to researchers outside of this institution.</br></br>
+Tracking the transfer of tissue samples is crucial and is done within the Research Database.</br></br>
+Transfers of materials out of OR into the possession of Research and Conservation Staff should always be recorded.</br></br>
+Complete the Biological Asset Transfer Form and save it here: <b>Q:/Research/MySQLDatabase/DataUpdates/OutstandingRequests</b> using the format <b>YYYYMMDD_FirstInitialLastName_TransferName</b>.
+</p>		
+		
+<button class="collapsible">Tissue Sample Transfers</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/BiologicalAsset_TransferForm_TEMPLATE.xlsx" class="DocButton">Biological Asset Transfer Form</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

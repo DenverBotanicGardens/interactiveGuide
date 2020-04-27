@@ -1,0 +1,58 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Adding Metadata to Field Images</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="backups.html"  >Monthly Backups</a>		
+	<a href="GBIF.html"  >Publish Data to GBIF</a>
+	<a href="GGBN.html"  >Publish Data to GGBN</a>
+	<a href="updateRDB.html"  >Update Records in Research DB</a>
+	<a href="imageMetadata.html" >Add Specimen Metadata to Field Images</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Adding Metadata to Field Images</h1>
+	<img src="../media/exiftool.png" class="sidenavImg6" ></img>
+<p>
+Data describing images captured in the field is recorded in notebooks and then submitted to the Research Database. Once specimen records in the Research Database are complete, the data can then be embedded into the images.
+</p>
+<button class="collapsible">Protocols & Workflows</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/FieldImages_Metadata_Workflow.pdf" class="DocButton">Field Image Metadata Workflow</a>
+	<a href= "" class="DocButton">Field Image Metadata Protocol</a>
+	<a href= "file:///Q:\Research\MySQL_database\Queries\create_exiftool_query2.sql" class="DocButton">Field Image Metadata SQL Query - On Q</a>
+	<a href="http://dbg-research-db/phpMyAdmin/" class="WebButton">Research Database</a>
+	
+
+		</p>
+		</br>		
+		</div>
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

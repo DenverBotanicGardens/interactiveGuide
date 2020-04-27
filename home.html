@@ -1,0 +1,40 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/styles//stylesheet.css">
+	<title>Interactive Guide to Asset Management</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="assets/media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="assets/html/specimen.html"  >Museum Specimen</a>		
+	<a href="assets/html/bioAssets.html"  >Biological Asset</a>
+	<a href="assets/html/monitoring.html"  >Ecological & Demographic Monitoring</a>
+	<a href="assets/html/digitalAsset.html"  >Digitial Assets & Images</a>
+	<a href="assets/html/tasks.html" >Specific Tasks</a>
+		<a href="assets/html/data.html" >Data Management & Publication</a>
+	<a href="home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Interactive Guide to Asset Management</h1>
+	</br>
+	<img src ="assets/media/DBGLogoColor.jpg" width = 45% heght = auto>
+	<h3>Department of Research and Conservation</h3>
+	<img src="assets/media/home.jpg" class="sidenavImgHome" ></img>
+	<h4>Created by Rick Levy, Database Associate</h4>
+	
+	
+	<p>Today's Date: <span id="datetime"></span></p>
+	<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML =dt.toLocaleDateString();
+	</script>
+</div>
+
+	
+
+	
+</body>

@@ -1,0 +1,82 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Deer Creek Restoration and Ecological Monitoring</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+<a href="Asmi.html"  ><i>Astragalus microcymbus</i></a>
+	<a href="Scgl.html"  ><i>Sclerocactus glaucus</i></a>
+	<a href="peha.html"  ><i>Penstemon harringtonii</i></a>
+	<a href="erbr.html"  ><i>Eriogonum brandegeei</i></a>
+	<a href="deerCreek.html"  >Deer Creek</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Deer Creek Restoration and Ecological Monitoring</h1>
+	<img src="../media/deercreek.jpg" class="sidenavImg2" ></img>
+</br></br></br></br>
+<h2>Vegetation</h2>
+<p>Each year 18 transects along Deer Creek (Chatfield Farms/ Hildebrand Ranch/ Jefferson County Open Space) are monitored, measuring understory percent cover, soil moisture, tree canopy cover, and plant species richness. <a href="vascularPlants.html" >Plant specimen vouchers</a> are also made and deposited in the herbarium.</p>
+
+<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/VegetationMonotoring_Protocol.pdf" class="DocButton">Vegetation Monitoring Protocol</a>
+	<a href="../resources/KHD_SpecimenCollection_Protocol.pdf" class="DocButton">Specimen Collection Protocol</a>
+		</p></br>		
+		</div>
+
+<button class="collapsible">Field Materials</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/ChatfieldRiparianRestoration_SpeciesList.pdf" class="DocButton">Deer Creek Riparian Species List</a>
+	<a href="../resources/EcologicalMonitoring_FieldSupplyChecklist.pdf" class="DocButton">Ecological Monitoring Field Supplies Checklist</a>
+	<a href="../resources/DeerCreek_VegetationMonitoring_DataSheet_FieldForm.pdf" class="DocButton">Deer Creek Vegetation Monitoring Field Sheet</a>
+		</p>
+		</br>		
+		</div>
+
+		<button class="collapsible">Data Submission</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/VegetationMonitoring_DataEntry_Protocol.pdf" class="DocButton">Vegetation Monitoring Data Submission Protocol</a>
+	<a href="../resources/TEMPLATE_DeerCreek_VegetationMonitoring_DataEntry.xlsm" class="DocButton">Deer Creek Vegetation Monitoring Data Submission Template</a>
+		</p>
+		</br>		
+		</div>		
+		
+<h2>Stream</h2>
+<p> Water quality, stream conditions, and aquatic macroinvertebrates are also monitored on an annual basis.</p>		
+
+<button class="collapsible">Aquatic Monitoring</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/AquaticMonitoring_Protocol.pdf" class="DocButton">Aquatic Monitoring Protocol</a>
+	<a href="../resources/AquaticMonitoring_FieldForm.pdf" class="DocButton">Water Quality Monitoring Field Sheet</a>
+	<a href="../resources/TEMPLATE_AquaticMonitoring_DataEntry.xlsx" class="DocButton">Water Quality Monitoring Data Submission Template</a>
+		</p>
+		</br>		
+		</div>		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

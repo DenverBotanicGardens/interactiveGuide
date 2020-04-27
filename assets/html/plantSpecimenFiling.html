@@ -1,0 +1,71 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Filing Plant Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="plantSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="plantSpecimenData.html"  >Data Submission</a>
+	<a href="plantSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="plantSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="plantSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Filing Plant Specimens</h1>
+	<img src="../media/KHDFiling.jpg" class="sideNavimg2"></img>
+	
+	
+	<p>
+	Once specimens have been imaged and the upload of the image file has been verified, they should be placed in Cabinet D to be filed.
+		</br></br>
+	Specimens are organized alphabetically by family.
+	</p>
+	
+	<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/KHD_SpecimenFiling_Protocol.pdf" class="DocButton">Plant Specimen Filing Protocol</a></br></br>
+		</p>
+		</div>
+	
+	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

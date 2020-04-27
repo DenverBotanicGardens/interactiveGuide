@@ -1,0 +1,53 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Updating Records in Research DB</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="backups.html"  >Monthly Backups</a>		
+	<a href="GBIF.html"  >Publish Data to GBIF</a>
+	<a href="GGBN.html"  >Publish Data to GGBN</a>
+	<a href="updateRDB.html"  >Update Records in Research DB</a>
+	<a href="imageMetadata.html" >Add Specimen Metadata to Field Images</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Updating Records in the Research Database</h1>
+	<img src="../media/researchDB.png" class="sidenavImg6" ></img>
+<p>
+Many specimen records are associated with ancillary assets, such as tissue samples, seeds, permits, images, etc. Symbiota, the application we use to manage specimen data records, cannot support these types of data. Therefore we also maintain records in our Research Departmental Database. Records in the Research DB are (most often) generated via the same source information as the Symbiota records, prior to the assignement of catalogNumber or occurrenceID. Therefore once these are assigned within Symbiota, records in the Research Database must be updated to include these important idetifiers.
+</p>
+<button class="collapsible">Updating Records</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "" class="DocButton">Research DB Records Update Protocol</a>
+	<a href= "../resources/KHD_Data_Vouchers_BioAssets_Workflow.pdf" class="DocButton">Research DB Records Update Workflow</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

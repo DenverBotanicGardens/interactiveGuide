@@ -1,0 +1,54 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Filing Fungal Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="fungiSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="fungiSpecimenData.html"  >Data Submission</a>
+	<a href="fungiSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="fungiSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="fungiSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Filing Fungal Specimens</h1>
+	<img src="../media/DBGSpecimenFiling.jpg" class="sidenavImg2" ></img>
+
+	
+	
+<button class="collapsible">Filing</button>
+		<div class ="content">
+		<p>	</br>
+		</p>
+		</br>		
+		</div>
+
+
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

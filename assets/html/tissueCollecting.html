@@ -1,0 +1,98 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Collecting Tissue</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="tissueCollecting.html"  >Tissue Collection</a>
+		<a href="tissueData.html"  >Data Submission</a>
+		<a href="tissueProcessing.html"  >Tissue Processing</a>
+		<a href="tissueStorageTransfers.html"  >Tissue Storage and Transfers</a>
+		<a href="DNA.html"  >Extracting DNA</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Collecting Tissue</h1>
+	<img src="../media/tissueCollecting.jpg"  class="sidenavImg2" ></img>
+<p>Before collecting tissue samples it is important to familiarize yourself with the preferred methods and data collection.
+		</br>
+		</br>
+	Review the <a href="../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild.xlsx">template for Herbarium Specimen and Biological Asset Data Recording spreadsheet</a> to see the types of data that need to be recorded. Ultimately, this template will be used to submit data for upload into the appropriate databases.
+		</br>
+		</br>
+	There is a <a href="../resources/TEMPLATE_DataFields_Vouchers_BioAssets_atDBG.xlsx">data template specific to Cultivated Herbarium Specimens and Biological Assets</a> that are collected from gardens or greenhouses at Denver Botanic Gardens. 
+		</br>
+		</br>
+	If you are collecting tissue samples for population genetics (multiple samples per species from 1 population) the data submission process differs, so be sure to familiarize yourself with that process.
+		</br>
+		</br>
+	It is likely (preferred and often required)) that you will collect herbarium vouchers along with your tissue samples. Review the <a href="plantSpecimenCollecting.html">Collecting Vascular Plant Specimens page</a>.
+</p>
+
+	
+<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_SpecimenCollection_Protocol.pdf" class="DocButton">Specimen Collection Protocol</a>
+	<a href= "../resources/KHD_Collecting&ProcessingCacti_Protocol.pdf" class="DocButton">Additional Info for Cacti Collections</a>
+		</p>
+		</br>		
+		</div>
+
+<button class="collapsible">Workflows</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_SpecimenAndDataSummary_Tissue_workflow.pdf" class="DocButton">KHD Specimen and Data with Tissue Summary Workflow</a>
+	</br>
+	</br>
+	</br>
+	</br>
+	<a href= "../resources/KHD_SpecimenCollection_DataRichCollections_TeamOf2_IllustratedProtocol.pdf" class="DocButton">Illustrated Collection Protocol: Team of 2</a>
+	<a href= "../resources/KHD_SpecimenCollection_DataRichCollections_TeamOf3_IllustratedProtocol.pdf" class="DocButton">Illustrated Collection Protocol: Team of 3</a>
+	<a href= "../resources/KHD_SpecimenCollection_DataRichCollections_TeamOf4_IllustratedProtocol.pdf" class="DocButton">Illustrated Collection Protocol: Team of 4</a>
+		</p>
+		</br>		
+		</div>
+
+<button class="collapsible">References</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/FieldWork_MetadataDictionary.pdf" class="DocButton">Field Work Metadata Dictionary</a>
+		</p>
+		</br>		
+		</div>
+
+
+<button class="collapsible">Videos</button>
+		<div class ="content">
+		<p>	</br>
+				<iframe width="806" height="453" src="https://www.youtube.com/embed/C6bsxQjNvuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</br></br>
+		</p>			
+		</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

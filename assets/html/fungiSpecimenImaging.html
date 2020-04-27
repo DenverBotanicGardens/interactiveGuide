@@ -1,0 +1,97 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Imaging Fungal Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="fungiSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="fungiSpecimenData.html"  >Data Submission</a>
+	<a href="fungiSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="fungiSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="fungiSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Imaging Fungal Specimens</h1>
+	<img src="../media/DBGspecimenImaging.jpg" class="sidenavImg2" ></img>
+<p>Specimen cards are scanned and made available online.
+</br></br>
+In 2019 we will begin imaging our Mycology Collection!
+</p>
+	
+	
+	<button class="collapsible">Imaging Specimens</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DBG_Specimen_Imaging_Protocol.pdf" class="DocButton">Specimen Imaging Protocol</a>
+	<a href= "../resources/DBG_SpecimenImaging_Workflow.pdf" class="DocButton">Specimen Imaging Workflow</a>
+	<a href= "../resources/DBG_SpecimenWrapping_Protocol.pdf" class="DocButton">Specimen Wrapping Protocol</a>
+	<a href= "../resources/DBG_AddingBarcode_Protocol.pdf" class="DocButton">Specimen Barcoding Protocol</a>
+	</p>
+		</br>
+		</div>	
+	
+	<button class="collapsible">Scanning Specimen Cards</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DBG_SpecimenCard_Imaging_Protocol.pdf" class="DocButton">Specimen Card Scanning Protocol</a>
+	<a href= "../resources/DBG_SpecimenCard_Processing_Protocol.pdf" class="DocButton">Specimen Card Image Processing Protocol</a>
+	</p>
+		</br>
+		</div>	
+
+	<button class="collapsible">Processing & Uploading Images</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DBG_MycologyCards_Workflow.pdf" class="DocButton">Specimen Card Workflow</a>
+	<a href= "../resources/DBG_SpecimenImageProcessing_Workflow.pdf" class="DocButton">Processing Specimen Images Workflow</a>
+	<a href= "../resources/DBG_ImageUpload_Protocol.pdf" class="DocButton">Uploading Images Protocol</a>
+
+		
+		</p>
+		</br>		
+		</div>
+		
+<button class="collapsible">Web</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "http://www.mycoportal.org" class="WebButton">MycoPortal</a>
+		</p>
+		</br>		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

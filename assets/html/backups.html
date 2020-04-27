@@ -1,0 +1,80 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Monthly Backups</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="backups.html"  >Monthly Backups</a>		
+	<a href="GBIF.html"  >Publish Data to GBIF</a>
+	<a href="GGBN.html"  >Publish Data to GGBN</a>
+	<a href="updateRDB.html"  >Update Records in Research DB</a>
+	<a href="imageMetadata.html" >Add Specimen Metadata to Field Images</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Monthly Backups and Procedures</h1>
+	<img src="../media/dwc-a.png" class="sidenavImg6" ></img>
+<p>
+On the first Friday of each month, back up data files are downloaded, statistics are recorded, and RSS feeds are updated for dataset dissemination.</p>
+<button class="collapsible">Backup Data</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DataBackup_Protocol.pdf" class="DocButton">Data Backup Protocol</a>
+	<a href= "http://swbiodiversity.org/seinet/" class="WebButton">SEINet</a>
+	<a href= "http://mycoportal.org/portal/index.php" class="WebButton">MycoPortal</a>
+	<a href= "http://scan-bugs.org/portal/" class="WebButton">SCAN</a>
+	<a href= "http://dbg-research-db/phpMyAdmin/" class="WebButton">Research Database</a>
+		</p>
+		</br>		
+		</div>
+
+<button class="collapsible">Update Statistics</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_RecordingSpecimenStatusStatistics_protocol.pdf" class="DocButton">Recording KHD Specimen Status Statistics Protocol</a>
+	<a href= "file:///Q:\Research\Data_Management\DataBackups\KHD_SEINetProccessingStatus_Stats.xlsx" class="DocButton">KHD Specimen Status Statistics Form - On Q</a>
+	<a href= "http://swbiodiversity.org/seinet/" class="WebButton">SEINet</a>
+		</br></br></br></br>
+	<a href= "../resources/KHD_iDigBioSpecimenDataUseStatisticsRecording_Protocol.pdf" class="DocButton">Recording KHD iDigBio Specimen Data Use Stats Protocol</a>
+	<a href= "file:///Q:\Research\Data_Management\DataBackups\KHD_iDigBio_DataUseTracking.xlsx" class="DocButton">KHD iDigBio Specimen Data Use Stats Form - On Q</a>
+	<a href= "https://www.idigbio.org/portal/recordsets/5835f642-2560-4e3e-9c25-741a12cc3fe8" class="WebButton">KHD iDigBio Page</a>
+	
+	</p>
+		</br>		
+		</div>
+
+<button class="collapsible">Update RSS Feeds</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/iDigBio_UpdatingRSS_Protocol.pdf" class="DocButton">Updating RSS Feed Protocol</a>
+	<a href= "http://intermountainbiota.org/portal/index.php" class="WebButton">IRHN</a>
+	<a href= "http://mycoportal.org/portal/index.php" class="WebButton">MycoPortal</a>
+	<a href= "http://scan-bugs.org/portal/" class="WebButton">SCAN</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

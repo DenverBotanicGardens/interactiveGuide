@@ -1,0 +1,65 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Storing and Transferring Seeds</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="seedCollecting.html"  >Seed Collection</a>
+		<a href="seedData.html"  >Data Submission</a>
+		<a href="seedProcessing.html"  >Seed Processing</a>
+		<a href="seedStorageTransfers.html"  >Seed Storage and Transfers</a>
+		<a href="seedExternal.html"  >Externally Sourced Seeds</a>
+		<a href="germination.html"  >Germination</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Storing and Transferring Seeds</h1>
+	<img src="../media/seedStorageTransfers.jpg" class="sidenavImg2" ></img>
+<p>
+Seeds are often used in germination trials, sent to other agencies for storage or research, or used to grow new progeny.</br></br>
+Tracking the transfer of seeds is crucial and is done within the Research Database.</br></br>
+Transfers of materials out of OR into the possession of Research and Conservation Staff should always be recorded.</br></br>
+Complete the Biological Asset Transfer Form and save it here:</br> <b>Q:/Research/MySQLDatabase/DataUpdates/OutstandingRequests</b> using the format <b>YYYYMMDD_FirstInitialLastName_TransferName</b>.
+</p>
+
+	
+<button class="collapsible">Transferring Seeds</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/BiologicalAsset_TransferForm_TEMPLATE.xlsx" class="DocButton">Biological Asset Transfer Form</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

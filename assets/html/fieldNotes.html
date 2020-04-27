@@ -1,0 +1,106 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Field Notes</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>	
+	<a href="fieldPhotos.html"  >Field Photos</a>
+	
+	<button class="collapsibleSideNav">Specimen Images</button>
+		<div class ="contentSideNav">
+	
+	<a href="plantSpecimenImaging.html"  >Plants</a>
+	<a href="fungiSpecimenImaging.html"  >Fungi</a>
+	
+		</div>
+	<a href="dataset.html"  >Dataset</a>
+	<a href=""  >GIS Shapefile</a>
+	<a href="programCode.html"  >Program Code</a>
+	<a href="fieldNotes.html"  >Field Notes</a>
+	<a href="permits.html"  >Permits</a>
+	<a href="plantTransfer.html"  >Specimen Transaction Form</a>
+	<a href=""  >Scientific Literature</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Field Notes</h1>
+	<img src="../media/fieldNotes.jpg" class="sidenavImg2" ></img>
+<p>
+Field notebooks and datasheets are an essential tool for recording information in the field that is eventually uploaded into a database.
+</br></br>
+They can also serve as hard-copy evidence or a primary source in the event of a data entry error or some other case of confusion.
+</br></br>
+Field notebooks and datasheets should be scanned after each day/trip in the field. A digital copy can serve as a backup in the event of a lost or damaged field notes.
+</p>
+	
+	
+	<button class="collapsible">Scanning Field Notes</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/FieldNotebookScanning_Protocol.pdf" class="DocButton">Field Notebook Scanning Protocol</a>
+		</p>
+		</br>
+		</p>
+		
+		</div>	
+
+	
+		<button class="collapsible">Videos</button>
+		<div class ="content">
+		<p>	</br>
+				<iframe width="789" height="444" src="https://www.youtube.com/embed/0fb2sQGXIN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</br></br>
+		</p>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsibleSideNav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+	
+</body>

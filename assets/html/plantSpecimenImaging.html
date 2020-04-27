@@ -1,0 +1,90 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Imaging Plant Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="plantSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="plantSpecimenData.html"  >Data Submission</a>
+	<a href="plantSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="plantSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="plantSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Imaging Vascular Plant Specimens</h1>
+	<img src="../media/KHDImaging.jpg" class="sideNavimg2"></img>
+<p>
+		Specimens are photographed and images are made available online.
+		</br>
+		</br>
+		Typically, volunteers image the specimens. Images are then processed and uploaded to SEINet by the Database Associate.
+	</p>
+	
+	<button class="collapsible">Imaging Specimens</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_SpecimenImaging_Workflow.pdf" class="DocButton">Imaging Plant Specimens Workflow</a>
+	<a href= "../resources/KHD_Specimen_Imaging_Protocol.pdf" class="DocButton">Imaging Plant Specimens Protocol</a>
+	<a href= "../resources/SpecimenImaging_QuickGuide.pdf" class="DocButton">Specimen Imaging Quick Guide</a>
+	</br></br>
+		</p>
+		</div>
+	
+	
+<button class="collapsible">Processing Specimen Images</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/KHD_SpecimenImage_Processing_Workflow.pdf" class="DocButton">Specimen Image Processing</a>	</br></br>
+		</p>
+		
+		</div>	
+	
+	<button class="collapsible">Uploading Specimen Images</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/KHD_SpecimenImage_Uploading_Workflow.pdf" class="DocButton">Uploading Specimen Images to SEINet Workflow</a>
+	<a href= "../resources/KHD_SpecimenImage_Uploading_Protocol.pdf"class="DocButton">Uploading Specimen Images to SEINet Protocol</a>
+		</p>
+		
+		</div>	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

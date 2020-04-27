@@ -1,0 +1,82 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Submitting Tissue Sample Data</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="tissueCollecting.html"  >Tissue Collection</a>
+		<a href="tissueData.html"  >Data Submission</a>
+		<a href="tissueProcessing.html"  >Tissue Processing</a>
+		<a href="tissueStorageTransfers.html"  >Tissue Storage and Transfers</a>
+		<a href="DNA.html"  >Extracting DNA</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Submitting Tissue Sample Data</h1>
+	<img src="../media/KHDData.jpg"  class="sidenavImg2" ></img>
+<p>
+	Submitting data for tissue samples differs when collecting 1 sample per voucher (floristics) VS. may samples per population (population genetics).
+	</br>
+<h2>Floristics</h2>
+	Tissue samples collected in conjunction with floristics projects can be batch uploaded into the Research Database along with their corresponding specimen data. Include tissue information in the same Spreadsheet Template used for Voucher Collections.
+	</br></br>
+	Save your spreadsheets here: <b>Q:\Research\All_Herbaria\CollectionsDataInProgress</b>.</br>
+	Use the naming convention <b>YYYYMMDD_FirstInitialLastName_ProjectName_Vouchers</b>
+	</br></br>
+	Once complete, contact the Database Associate for review and upload. Data will be uploaded to SEINet and the Research Database.
+</p>
+
+<button class="collapsible">Floristics Tissue Data Templates</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild.xlsx" class="DocButton">Template for Wild Voucher Collections Data</a>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_atDBG.xlsx" class="DocButton">Template for Cultivated Voucher Collections Data</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+<h2>Population Genetics</h2>
+<p>
+	Tissue samples collected for population genetics studies, must be submitted one population (workID) at a time. This can be done using a web form if 29 or fewer individual plants were sampled. If 30 or more were sampled, complete and submit a CSV form to upload the data.
+</br></br>
+	Save CSV forms here: <b>Q:\Research\MySQL_database\DataUploads\UploadedDataFiles\BiologicalAssets</b> if you upload yourself, or <b>Q:\Research\MySQL_database\DataUploads\ToBeUploaded\BiologicalAssets</b> if you would like the Database Associate to upload.
+	Use the naming convention <b>YYYYMMDD_FirstInitialLastName_ProjectName_Tissue</b>
+</p>
+	
+<button class="collapsible">Population Genetics Tissue Data Forms</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "https://research.botanicgardens.org/admin/workdone/upload_web.php" class="WebButton">Web Form</a>
+	<a href= "../resources/TEMPLATE_BiologicalAssets.xlsx" class="DocButton">CSV Form</a>
+	<a href= "https://research.botanicgardens.org/admin/workdone/upload.php" class="WebButton">Submit CSV Form</a></p>
+		</br>		
+		</div>
+<p>If you have any questions or data that does not fit the templates, do not hesitate to contact the Database Associate.</p>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

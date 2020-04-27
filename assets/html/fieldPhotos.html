@@ -1,0 +1,123 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Field Photography</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>	
+	<a href="fieldPhotos.html"  >Field Photos</a>
+	
+	<button class="collapsibleSideNav">Specimen Images</button>
+		<div class ="contentSideNav">
+	
+	<a href="plantSpecimenImaging.html"  >Plants</a>
+	<a href="fungiSpecimenImaging.html"  >Fungi</a>
+	
+		</div>
+	<a href="dataset.html"  >Dataset</a>
+	<a href=""  >GIS Shapefile</a>
+	<a href="programCode.html"  >Program Code</a>
+	<a href="fieldNotes.html"  >Field Notes</a>
+	<a href="permits.html"  >Permits</a>
+	<a href="plantTransfer.html"  >Specimen Transaction Form</a>
+	<a href=""  >Scientific Literature</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Taking Photos in the Field</h1>
+	<img src="../media/fieldPhotos.jpg" class="sidenavImg2" ></img>
+<p>
+Capturing images of field work is an important and valuable part of our work. It is important that these images are useful for a number of purposes and remain so well into the future.
+</br></br>
+Please review the protocols and procedures before setting out into the field and taking photos.
+</br></br>
+It is important to follow the protocols for taking pictures as well as processing the images so that the correct metadata can be embedded.
+</p>
+	
+	
+	<button class="collapsible">Taking Photos</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/FieldPhotography&ImageProcessing_Workflow.pdf" class="DocButton">Field Photography & Image Processing Workflow</a>	
+	<a href= "../resources/FieldPhotography_Protocol.pdf" class="DocButton">Field Photography Procotol</a>
+		</p>
+		</br>
+		</p>
+		
+		</div>	
+
+	<button class="collapsible">Processing Photos</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/FieldImageProcessing_Protocol.pdf" class="DocButton">Field Photography Image Processing Protocol</a>
+	<a href= "../resources/ImageNamingConventions.pdf" class="DocButton">Image Naming Conventions</a>
+	<a href= "../resources/ImageCategoryDefinitions.pdf" class="DocButton">Image Category Definitions</a>
+	</p>
+	</br>
+		</p>
+		</div>
+
+	<button class="collapsible">Policies, Waivers, and Other Documents</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DataDistributionPolicy.pdf" class="DocButton">Data and Digital Asset Distribution Policy</a>	
+	<a href= "../resources/VolunteerImagePolicy.pdf" class="DocButton">Volunteer Image Policy and Waiver</a>
+		</p>
+		</br>
+		</p>
+		
+		</div>	
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsibleSideNav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+	
+</body>

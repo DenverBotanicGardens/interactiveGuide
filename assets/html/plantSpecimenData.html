@@ -1,0 +1,117 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Collecting Plant Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="plantSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="plantSpecimenData.html"  >Data Submission</a>
+	<a href="plantSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="plantSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="plantSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Submitting Vascular Plant Specimen Data</h1>
+	<img src="../media/KHDData.jpg" class="sideNavimg2"></img>
+	<p>Data should be transcribed from field books into a spreadsheet template for bulk upload.
+		</br>
+		</br>
+		Fill out the <a href="../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild.xlsx">Template for Herbarium Specimen Data Recording spreadsheet</a> to submit data for specimens collected in the wild.
+		</br>
+		</br>
+		Fill out the <a href="../resources/TEMPLATE_DataFields_Vouchers_BioAssets_atDBG.xlsx">Template for Cultivated Herbarium Specimens</a> to submit data for specimens collected at Denver Botanic Gardens. 
+		</br>
+		</br>
+		Save your spreadsheets here: <b>Q:\Research\All_Herbaria\CollectionsDataInProgress</b>. </br>Use the naming convention <b>YYYYMMDD_FirstInitialLastName_ProjectName_Vouchers</b>
+		</br>
+		</br>
+		Once complete, contact the Database Associate for review and upload. Data will be uploaded to SEINet and in most cases the Research Database.
+		</br>
+		</br>
+		Data can then be exported to be made into labels.
+	</p>
+	
+	<button class="collapsible">Templates</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild.xlsx" class="DocButton">Template Spreadsheet for Wild Voucher Collections Data</a>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_atDBG.xlsx" class="DocButton">Template Spreadsheet for Cultivated Voucher Collections Data</a>
+	</br></br></br></br>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild_NonKHDCollectors.xlsx" class="DocButton">Template Spreadsheet for Non KHD Staff Collectors</a>
+				</br></br>
+		</p>
+		
+		</div>	
+
+	
+	<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_SpecimenData_BatchUpload_Protocol.pdf" class="DocButton">KHD Specimen Data Batch Upload Protocol</a>
+	<a href= "../resources/KHD_DataEntryFromImages_Protocol.pdf" class="DocButton">KHD Specimen Data Entry From Images Protocol</a>
+	<a href= "../resources/KHD_ProcessingStatus_Protocol.pdf" class="DocButton">KHD Processing Status Protocol</a>
+	</br></br></br></br>
+	<a href= "../resources/KHD_ExportingData_SpecimenLabels_Protocol.pdf" class="DocButton">Exporting Data for Vascular Plant Specimen Labels Protocol</a>
+
+				</br></br>
+		</p>
+		
+		</div>	
+
+	<button class="collapsible">Workflows</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_SpecimenAndDataSummary_Tissue_workflow.pdf" class="DocButton">KHD Specimen and Data with Tissue Summary Workflow</a>
+	<a href= "../resources/KHD_Data_Vouchers_BioASsets_Workflow.pdf" class="DocButton">KHD Specimen and Tissue Data Upload and Update Workflow</a>
+				</br></br>
+		</p>
+		</div>
+		
+	<button class="collapsible">Web</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "http://www.swbiodiversity.org" class="WebButton">SEINet</a>
+	<a href= "https://research.botanicgardens.org/admin/login.php" class="WebButton">Research Database</a>	
+				</br></br>
+		</p>	
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

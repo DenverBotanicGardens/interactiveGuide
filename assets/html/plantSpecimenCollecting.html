@@ -1,0 +1,105 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Collecting Plant Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="plantSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="plantSpecimenData.html"  >Data Submission</a>
+	<a href="plantSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="plantSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="plantSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Collecting Vascular Plant Specimens</h1>
+	<img src="../media/KHDCollecting.jpg" class="sidenavImg2" ></img>
+	<p>
+		Before collecting herbarium voucher specimens it is important to familiarize yourself with the preferred methods and data collection.
+		</br>
+		</br>
+		Review the <a href="../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild.xlsx">template for Herbarium Specimen Data Recording spreadsheet</a> to see the types of data that need to be recorded. Ultimately, this template will be used to submit data for upload into the appropriate databases.
+		</br>
+		</br>
+		There is a <a href="../resources/TEMPLATE_DataFields_Vouchers_BioAssets_atDBG.xlsx">data template specific to Cultivated Herbarium Specimens</a> that are collected from gardens or greenhouses at Denver Botanic Gardens. 
+		</br>
+		</br>
+		It is likely that you will collect Tissue Samples along with your specimens. Review the <a href="">Collecting Tissue Page</a>.
+	</p>
+	
+	
+	<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+				<a href= "../resources/KHD_SpecimenCollection_Protocol.pdf" class="DocButton">Specimen Collection Protocol</a>
+				<a href= "../resources/KHD_Collecting&ProcessingCacti_Protocol.pdf" class="DocButton">Additional Info for Cacti Collections</a>
+				</br></br>
+		</p>
+		
+		</div>	
+
+	<button class="collapsible">Workflows</button>
+		<div class ="content">
+		<p>	</br>
+				<a href= "../resources/KHD_SpecimenAndDataSummary_Tissue_workflow.pdf" class="DocButton">KHD Specimen and Data with Tissue Summary Workflow</a>
+				</br></br></br>
+				<a href= "../resources/KHD_SpecimenCollection_DataRichCollections_TeamOf2_IllustratedProtocol.pdf" class="DocButton">Illustrated Collection Protocol: Team of 2</a>
+				<a href= "../resources/KHD_SpecimenCollection_DataRichCollections_TeamOf3_IllustratedProtocol.pdf" class="DocButton">Illustrated Collection Protocol: Team of 3</a>
+				<a href= "../resources/KHD_SpecimenCollection_DataRichCollections_TeamOf4_IllustratedProtocol.pdf" class="DocButton">Illustrated Collection Protocol: Team of 4</a>
+				</br></br>
+		</p>
+		</div>
+		
+	<button class="collapsible">References</button>
+		<div class ="content">
+		<p>	</br>
+				<a href= "../resources/FieldWork_MetadataDictionary.pdf" class="DocButton">Field Work Metadata Dictionary</a>
+				</br></br>
+		</p>	
+		</div>
+		
+	<button class="collapsible">Videos</button>
+		<div class ="content">
+		<p>	</br>
+				<iframe width="806" height="453" src="https://www.youtube.com/embed/C6bsxQjNvuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</br></br>
+		</p>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

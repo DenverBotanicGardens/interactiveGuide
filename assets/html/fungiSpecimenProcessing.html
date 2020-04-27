@@ -1,0 +1,98 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Processing Fungal Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="fungiSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="fungiSpecimenData.html"  >Data Submission</a>
+	<a href="fungiSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="fungiSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="fungiSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Processing Fungal Specimens</h1>
+	<img src="../media/DBGProcessing.jpg" class="sidenavImg2" ></img>
+<p>
+	Specimens brought in from the field must be processed quickly.
+	</br></br>
+	Many identification procedures require a specimen to be fresh. Either place the specimen in a paper bag and refridgerate, or begin identification and description process right away.
+</p>
+	
+	
+<button class="collapsible">Processing</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DBG_SpecimenAndDataSummary_Workflow_ForVolunteers.pdf" class="DocButton">DBG Specimen Processing Workflow</a>
+		</p>
+		</br>		
+		</div>
+
+	<button class="collapsible">Specimen Drying</button>
+		<div class ="content">
+		<p>	</br>
+		</p>
+		</br>
+		</div>	
+	
+	<button class="collapsible">Specimen Identification & Description</button>
+		<div class ="content">
+		<p>
+		</br>
+<a href= "../resources/DBG_StainsAndReagents.pdf" class="DocButton">Stains and Reagents List</a>
+		</p>
+		</br>
+		</div>	
+
+	<button class="collapsible">Accessioning</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/DBG_SpecimenAccessioning_Protocol.pdf" class="DocButton">DBG Specimen Accession Protocol</a>
+		</p>
+		</br>		
+		</div>
+		
+<button class="collapsible">Web</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "http://www.mycoportal.org" class="WebButton">MycoPortal</a>
+		</p>
+		</br>		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

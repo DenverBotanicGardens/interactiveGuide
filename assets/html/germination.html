@@ -1,0 +1,69 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Germination</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="seedCollecting.html"  >Seed Collection</a>
+		<a href="seedData.html"  >Data Submission</a>
+		<a href="seedProcessing.html"  >Seed Processing</a>
+		<a href="seedStorageTransfers.html"  >Seed Storage and Transfers</a>
+		<a href="seedExternal.html"  >Externally Sourced Seeds</a>
+		<a href="germination.html"  >Germination</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Germination</h1>
+	<img src="../media/seedGermination.jpg"  class="sidenavImg2" ></img>
+<p>
+Prior to beginning a germination trail, seeds must be accessioned and properly recorded in the Research Database.
+</br></br>
+A <a href="../resources/BiologicalAsset_TransferForm_TEMPLATE.xlsx">Biological Asset Transfer Form</a> must also be completed to reflect the removal of seed from storage.
+</br></br>
+The Research Database Website has a Germination Trial Web Tool to aid in the management of data. THe tool allows the user to select the seeds to be used, methods used, and create new records for any plants produced from the trials.
+</br></br> Consult with the Database Associate if you would like to set up a Germination Trial or need any assistance doing so.
+</p>
+
+	
+<button class="collapsible">Seeds and Germination Tracking Tools</button>
+		<div class ="content">
+		<p>	</br>
+<a href= "../resources/BiologicalAsset_TransferForm_TEMPLATE.xlsx" class="DocButton">Biological Asset Transfer Form</a>
+<a href="https://research.botanicgardens.org/admin/workdone/create_germination_trial.php" class="WebButton" >Create New Germination Trial</a>
+<a href="https://research.botanicgardens.org/admin/workdone/germination_trials.php" class="WebButton" >View/Resume Germination Trials</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

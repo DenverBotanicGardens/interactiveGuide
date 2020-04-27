@@ -1,0 +1,74 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Field Photography</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>	
+	<a href="fieldPhotos.html"  >Field Photos</a>
+	
+	<button class="collapsibleSideNav">Specimen Images</button>
+		<div class ="contentSideNav">
+	
+	<a href="plantSpecimenImaging.html"  >Plants</a>
+	<a href="fungiSpecimenImaging.html"  >Fungi</a>
+	
+		</div>
+	<a href="dataset.html"  >Dataset</a>
+	<a href=""  >GIS Shapefile</a>
+	<a href="programCode.html"  >Program Code</a>
+	<a href="fieldNotes.html"  >Field Notes</a>
+	<a href="permits.html"  >Permits</a>
+	<a href="plantTransfer.html"  >Specimen Transaction Form</a>
+	<a href=""  >Scientific Literature</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Datasets</h1>
+	<img src="http://www.gbif.fr/sites/all/themes/bootstrap/gbif_theme/img/logo-gbif.jpg" class="sidenavImg2" ></img>
+<p>
+The Denver Botanic Gardens is committed to making data openly available.
+	</br></br>
+This is often achieved through publishing well curated datasets and linking them with specimens, literature, or other assets when applicable.
+	</br></br>
+Datasets are most often published on the <a href=https://www.gbif.org>Global Biodiversity Information Facility (GBIF))</a>, as this is a globally accessible platform and is a widely used resource.
+</p>
+	
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsibleSideNav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+	
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Publishing Data to GBIF</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="backups.html"  >Monthly Backups</a>		
+	<a href="GBIF.html"  >Publish Data to GBIF</a>
+	<a href="GGBN.html"  >Publish Data to GGBN</a>
+	<a href="updateRDB.html"  >Update Records in Research DB</a>
+	<a href="imageMetadata.html" >Add Specimen Metadata to Field Images</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Publishing Data to GBIF</h1>
+	<a href="https://www.gbif.org/" target_blank>
+	<img src="data:image/jpeg;base64,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" class="sidenavImg6" ></img>
+	</a>
+<button class="collapsible">Complete Museum Collections (Occurrence Based)</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "" class="DocButton">Publishing Museum Collections to GBIF Protocol</a>
+	<a href="http://ipt.vertnet.org:8080/ipt/" class="WebButton">VertNet IPT</a>
+	<a href= "http://swbiodiversity.org/seinet/" class="WebButton">SEINet</a>
+	<a href= "http://mycoportal.org/portal/index.php" class="WebButton">MycoPortal</a>
+	</br></br></br></br>
+	<iframe width="738" height="415" src="https://www.youtube.com/embed/eDH9IoTrMVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</p>
+		</br>		
+		</div>
+
+<button class="collapsible">Projects (Sampling Event Based)</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "" class="DocButton">Publishing Sampling Event Projects to GBIF Protocol</a>	
+	<a href="http://ipt.vertnet.org:8080/ipt/" class="WebButton">VertNet IPT</a>
+
+	</p>
+		</br>		
+		</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

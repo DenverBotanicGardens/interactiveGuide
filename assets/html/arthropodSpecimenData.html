@@ -1,0 +1,73 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Submitting Arthropod Specimen Data</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="arthropodSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="arthropodSpecimenData.html"  >Data Submission</a>
+	<a href="arthropodSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="arthropodSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Submitting Arthropod Specimen Data</h1>
+	<img src="../media/KHDData.jpg" class="sidenavImg2" ></img>
+<p>
+	Specimen data should be transcribed from field books into a template spreadsheet that can then be uploaded to SCAN and in some cases the Research Database.
+	</br>
+	</br>
+</p>
+
+	
+	
+	<button class="collapsible">Templates</button>
+		<div class ="content">
+		<p>	</br>
+<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild.xlsx" class="DocButton">Template Spreadsheet for Voucher Collections Data</a>
+		</p>
+		</br>
+		</div>
+		
+	<button class="collapsible">Web</button>
+		<div class ="content">
+		<p>	</br>
+<a href= "http://scan-bugs.org/portal/" class="WebButton">SCAN</a>
+<a href="https://research.botanicgardens.org" class="WebButton">Research Database</a>		</p>
+		</br>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

@@ -1,0 +1,80 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Submitting Seed Data</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="seedCollecting.html"  >Seed Collection</a>
+		<a href="seedData.html"  >Data Submission</a>
+		<a href="seedProcessing.html"  >Seed Processing</a>
+		<a href="seedStorageTransfers.html"  >Seed Storage and Transfers</a>
+		<a href="seedExternal.html"  >Externally Sourced Seeds</a>
+		<a href="germination.html"  >Germination</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Submitting Seed Data</h1>
+	<img src="../media/KHDData.jpg" class="sidenavImg2" ></img>
+<h2>Tracking Maternal Line</h2>
+<p>
+	Seed collections at the population level that track maternal line, must be submitted one population (workID) at a time. This can be done using a web form if 29 or fewer individual plants were sampled. If 30 or more were sampled, complete and submit a CSV form to upload the data.
+</br></br>
+	Save CSV forms here: <b>Q:\Research\MySQL_database\DataUploads\UploadedDataFiles\BiologicalAssets</b> if you upload yourself, or <b>Q:\Research\MySQL_database\DataUploads\ToBeUploaded\BiologicalAssets</b> if you would like the Database Associate to upload.
+	Use the naming convention <b>YYYYMMDD_FirstInitialLastName_ProjectName_Tissue</b>
+</p>
+<button class="collapsible">Tracking Maternal Line</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "https://research.botanicgardens.org/admin/workdone/upload_web.php" class="WebButton">Web Form</a>
+	<a href= "../resources/TEMPLATE_BiologicalAssets.xlsx" class="DocButton">CSV Form</a>
+	<a href= "https://research.botanicgardens.org/admin/workdone/upload.php" class="WebButton">Submit CSV Form</a>
+		</p>
+		</br>		
+		</div>
+<h2>Bulk Collecting</h2>
+<p>
+	When collecting seed from multiple plants, but maternal line is not tracked (seed all stored together), the Template for Bulk Voucher and Seed Collections Data can be used. This spreadsheet allows for multiple collections to be uploaded all at once along with information pertaining to the associated voucher specimen collected.
+</p>
+
+	
+
+
+<button class="collapsible">Bulk Collections</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_Wild_Seed.xlsx" class="DocButton">Template for Bulk Wild Voucher and Seed Collections Data</a>
+	<a href= "../resources/TEMPLATE_DataFields_Vouchers_BioAssets_atDBG.xlsx" class="DocButton">Template for Bulk Cultivated Voucher and Seed Collections Data</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

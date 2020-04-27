@@ -1,0 +1,58 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Digital Assets</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>	
+	<a href="fieldPhotos.html"  >Field Photos</a>
+	
+	<button class="collapsibleSideNav">Specimen Images</button>
+		<div class ="contentSideNav">
+	
+	<a href="plantSpecimenImaging.html"  >Plants</a>
+	<a href="fungiSpecimenImaging.html"  >Fungi</a>
+	
+		</div>
+	<a href="dataset.html"  >Dataset</a>
+	<a href=""  >GIS Shapefile</a>
+	<a href="programCode.html"  >Program Code</a>
+	<a href="fieldNotes.html"  >Field Notes</a>
+	<a href="permits.html"  >Permits</a>
+	<a href="plantTransfer.html"  >Specimen Transaction Form</a>
+	<a href=""  >Scientific Literature</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Digital Assets</h1>
+	<img src="../media/digitalAsset.jpg" class="sidenavImg" ></img>
+<h4>
+<a href ="" title="Follow the gnome">
+		<img src="../media/gnome.png" width="auto" height="40"></img></a>
+</h4>
+	</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsibleSideNav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>

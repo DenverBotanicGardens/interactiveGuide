@@ -1,0 +1,341 @@
+/* button classes*/
+
+.LinkButton {
+  border-style: solid;
+  border-width : 5px 5px 5px 5px;
+  text-decoration : none;
+  padding : 15px 32px;
+  border-color : blue;
+  color: white;
+  background-color: blue;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 10pt;
+}
+
+.DocButton {
+  border-style: solid;
+  border-width : 5px 5px 5px 5px;
+  text-decoration : none;
+  padding : 15px 32px;
+  border-color : #FF8C00;
+  color: white;
+  background-color: #FF8C00;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 10pt;
+}
+
+.WebButton {
+  border-style: solid;
+  border-width : 5px 5px 5px 5px;
+  text-decoration : none;
+  padding : 15px 32px;
+  border-color : #FF69B4;
+  color: white;
+  background-color: #FF69B4;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 10pt;
+}
+
+.imgButton {
+	width: auto;
+	height: 200px;
+}
+
+/*home button*/
+.HomeButton {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+   height: 25px;
+   font-family: 'Helvetica', 'Arial', sans-serif;
+   font-size: 10pt;
+}
+
+/*lower menu button positioning*/
+
+.BottomButtons {
+	position: fixed;
+	left: 0;
+	bottom: 70px;
+}
+
+
+
+.img2 {
+	float: right;
+	border-radius: 20px;
+	width: 400px;
+	height: auto;
+	padding: 10px;
+	
+}
+.img3 {
+	float: right;
+	border-radius: 20px;
+	width: 600px;
+	height: auto;
+}
+
+.img4 {
+	float: left;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: black;
+	width: 337;
+	height: 540;
+}
+
+/*for captioning images and videos*/
+
+figure {
+	float: right;
+	border-radius: 20px;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	font-size: 18;
+}
+
+
+
+/*Headers*/
+h1	{
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+margin: 0px;
+}
+
+h2	{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h3	{
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+margin: 0px;
+}
+
+/*Video*/
+video {
+float: right;
+	border-radius: 20px;
+	width: 450px;
+	height: auto;
+	padding: 10px;
+}
+video.vd2{
+	border-radius: 20px;
+	width: 1000px;
+	height: auto;
+	padding: 10px;
+}
+
+/* Collapsing list Menu*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+  padding: 0px 18px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #f1f1f1;
+}
+
+/*Collapsing list in sideNav*/
+.collapsibleSideNav {
+    background-color: #111;
+    cursor: pointer;
+    padding: 6px 8px 6px 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+ 	font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15pt;
+    color: #818181;
+
+}
+
+
+.contentSideNav {
+  padding: 0px 18px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #111;
+  font-size: 12pt;
+}
+
+.collapsibleSideNav:hover {
+    color: white;
+}
+
+/*side navigation panel*/
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 25px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 15pt;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidenavHome {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+	bottom: 25px;
+	left: 0;
+	position: absolute;
+}
+
+.sidenavLogo {
+    padding: 6px 8px 6px 16px;
+    display: block;
+	height: 125px;
+	width: auto;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*main page with sidenav*/
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+    padding: 0px 10px;
+
+}
+
+.main h3 {
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+margin: 0px;
+font-size: 24px;
+}
+
+.main h4 {
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+margin: 0px;
+font-size: 12px;
+bottom: 25px;
+position: absolute;
+right: 10;
+}
+
+/*page image with sidenave*/
+
+.sidenavImg {
+	max-width: 100%;
+	max-height: 100%;
+}
+.sidenavImgHome {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.sidenavImg2 {
+	width: 350px;
+	height: auto;
+	float: right;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+
+.sidenavImg3 {
+	width: 700px;
+	height: auto;
+	float: right;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+
+
+.sidenavImg4 {
+	width: 500px;
+	height: auto;
+	float: right;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+
+.sidenavImg5 {
+	max-width: 75%;
+	max-height: 75%;
+}
+
+.sidenavImg6 {
+	width: auto;
+	height: 200px;
+	float: right;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

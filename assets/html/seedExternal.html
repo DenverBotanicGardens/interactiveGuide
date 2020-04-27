@@ -1,0 +1,64 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Externally Sourced Seeds</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="seedCollecting.html"  >Seed Collection</a>
+		<a href="seedData.html"  >Data Submission</a>
+		<a href="seedProcessing.html"  >Seed Processing</a>
+		<a href="seedStorageTransfers.html"  >Seed Storage and Transfers</a>
+		<a href="seedExternal.html"  >Externally Sourced Seeds</a>
+		<a href="germination.html"  >Germination</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Externally Sourced Seeds</h1>
+	<img src="https://www.blm.gov/sites/blm.gov/files/program_nativeplants_collection_seeds%20of%20success_photo1.gif" class="sidenavImg2" ></img>
+<p>
+Seeds sourced externally, such as purchased from a distributor, BLM's Seeds of Success Program, or otherwise not collected by staff, there is additional data that must be submitted.
+</br></br>
+Contact the Database Associate for assistance.
+</p>
+
+	
+<button class="collapsible">Submitting Data</button>
+		<div class ="content">
+		<p>	</br>
+<a href= "../resources/TEMPLATE_ExternallySourcedSeeds.xlsx"class="DocButton">Template for Externally Sourced Seeds Data</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

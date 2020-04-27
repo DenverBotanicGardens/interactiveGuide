@@ -1,0 +1,66 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Processing Tissue Samples</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="tissueCollecting.html"  >Tissue Collection</a>
+		<a href="tissueData.html"  >Data Submission</a>
+		<a href="tissueProcessing.html"  >Tissue Processing</a>
+		<a href="tissueStorageTransfers.html"  >Tissue Storage and Transfers</a>
+		<a href="DNA.html"  >Extracting DNA</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Processing Tissue Samples</h1>
+	<img src="../media/tissueProcessing.jpg"  class="sidenavImg2" ></img>
+<p>
+Tissue samples must be dried in silica gel for a minimum of 4 days.
+</br></br>
+Samples may then be stored in a plastic bin, without silica, on the shelf in the hallway between the office and the herbarium.
+</br></br>
+Once labels have been added, tissue samples will be placed in long term storage in the Biorepository cabinet in the lab.
+</p>
+
+<button class="collapsible">Workflows</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/BiologicalAsset_TissueProcessing_Workflow.pdf" class="DocButton">Tissue Sample Processing Workflow</a>
+	<a href= "../resources/LifeOfATissueSample.pdf" class="DocButton">Life of a Tissue Sample</a>
+		</p>
+		</br>		
+		</div>
+		
+<button class="collapsible">Making Labels</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/TissueSampleLabels_Protocol.pdf" class="DocButton">Creating Tissue Sample Label Protocol</a>
+	<a href= "https://research.botanicgardens.org/admin/query.php" class="WebButton">Research Database Read Only Query</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

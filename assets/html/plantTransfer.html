@@ -1,0 +1,89 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Transferring Museum Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="plantSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="plantSpecimenData.html"  >Data Submission</a>
+	<a href="plantSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="plantSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="plantSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Transferring Museum Specimens (Loans)</h1>
+	<img src="../media/loans.jpg" class="sideNavimg2"></img>
+	
+
+	<p>
+	Specimens may be loaned within or outside of our institution. Please review the policies and complete a Museum Specimen Transfer Form prior to accepting loan requests or sending a loan.
+		</br></br>
+	Specimens may also be given to other institutions as gifts or exchanges. Be sure to review policies and complete a Museum Specimen Transfer Form in these cases as well.
+		</br></br>
+	<h2>For transfers to another institution</h2>
+	Save the completed form as <b>YYYYMMDD_ExternalLoan_FirstInitialLastName</b> and save it here: </br><b>Q:\Research\All_Herbaria\Loans.Gifts.Exchange\OutgoingLoans\ExternalLoans</b>.
+		</br></br>
+	<h2>For transfers within Denver Botanic Gardens</h2>
+	Save the completed form as <b>YYYMMDD_InternalLoan_FirstInitialLastName</b> and save it here:</br> <b>Q:\Research\All_Herbaria\Loans.Gifts.Exchange\OutgoingLoans\InternalLoans</b>.
+	</p>
+	
+	<button class="collapsible">Policies</button>
+		<div class ="content">
+		<p>	</br>
+<a href="../resources/Denver Botanic Gardens Collections Policies.pdf" class="DocButton">Museum Specimen Transfer Policies</a>		</p>
+		</p>
+		</br>
+		</div>
+	
+	<button class="collapsible">Forms</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/SpecimenTransfer_Form.pdf" class="DocButton">Museum Specimen Transfer Form</a>
+	<a href="../resources/DestructiveSamplingOnly_Form.pdf" class="DocButton">Destructive Sampling Only Form</a>		</p>
+		</br>
+		</div>	
+
+	<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/KHD_OutgoingLoan_Protocol.pdf" class="DocButton">KHD Outgoing Loan Protocol</a>		</p>
+		</br>
+		</div>		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

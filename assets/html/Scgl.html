@@ -1,0 +1,62 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Sclerocactus glaucus</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+<a href="Asmi.html"  ><i>Astragalus microcymbus</i></a>
+	<a href="Scgl.html"  ><i>Sclerocactus glaucus</i></a>
+	<a href="peha.html"  ><i>Penstemon harringtonii</i></a>
+	<a href="erbr.html"  ><i>Eriogonum brandegeei</i></a>
+	<a href="deerCreek.html"  >Deer Creek</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1><i>Sclerocactus glaucus</i></h1>
+	<img src="../media/scgl.jpg" class="sidenavImg2" ></img>
+<p>
+Datasheets for field data recording are generated and printed from the Research Database Website.
+</p>
+<br>
+
+
+<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="../resources/Demographics_Sclerocactus-glaucus_DataSubmission_Protocol.pdf" class="DocButton">Scgl Data Entry Protocol</a>
+		</p>
+		</br>		
+		</div>
+
+
+<button class="collapsible">Web</button>
+		<div class ="content">
+		<p>	</br>
+	<a href="https://research.botanicgardens.org" class="WebButton">Research Database</a>
+	<a href="https://research.botanicgardens.org/admin/demographics/scgl/datasheets.php" class="WebButton">Create and Print Scgl Datasheets</a>
+		</br>		
+		</div>
+		
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

@@ -1,0 +1,57 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Publishing Data to GGBN</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="backups.html"  >Monthly Backups</a>		
+	<a href="GBIF.html"  >Publish Data to GBIF</a>
+	<a href="GGBN.html"  >Publish Data to GGBN</a>
+	<a href="updateRDB.html"  >Update Records in Research DB</a>
+	<a href="imageMetadata.html" >Add Specimen Metadata to Field Images</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Publishing Data to GGBN</h1>
+	<a href="http://www.ggbn.org/ggbn_portal/" target_blank>
+	<img src="data:image/png;base64,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" class="sidenavImg6" ></img>
+	</a>
+	<p>
+</p>
+<button class="collapsible">Publishing Tissue Sample Records</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "" class="DocButton">Publishing Tissue Sample Records to GGBN Protocol</a>
+	<a href="http://ipt.vertnet.org:8080/ipt/" class="WebButton">VertNet IPT</a>
+	<a href="http://dbg-research-db/phpMyAdmin/" class="WebButton">Research Database</a>
+	<a href="file://Q:\Research\MySQL_database\Queries\ggbn_tissueONLY_query.sql" class="DocButton">GGBN Tissue Data Pull SQL Query</a>
+		</p>
+		</br>		
+		</div>
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	

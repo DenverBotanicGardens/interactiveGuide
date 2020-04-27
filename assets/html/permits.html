@@ -1,0 +1,100 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Permits</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>	
+	<a href="fieldPhotos.html"  >Field Photos</a>
+	
+	<button class="collapsibleSideNav">Specimen Images</button>
+		<div class ="contentSideNav">
+	
+	<a href="plantSpecimenImaging.html"  >Plants</a>
+	<a href="fungiSpecimenImaging.html"  >Fungi</a>
+	
+		</div>
+	<a href="dataset.html"  >Dataset</a>
+	<a href=""  >GIS Shapefile</a>
+	<a href="programCode.html"  >Program Code</a>
+	<a href="fieldNotes.html"  >Field Notes</a>
+	<a href="permits.html"  >Permits</a>
+	<a href="plantTransfer.html"  >Specimen Transaction Form</a>
+	<a href=""  >Scientific Literature</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Permits</h1>
+	<img src="../media/permits.jpg" class="sidenavImg2" ></img>
+<p>
+Permits may be required for collecting certain species or on a particular piece of land.
+</br></br>
+Permits are scanned and filed on the Q Drive and their information is uploaded into the Research Database.
+
+</p>
+	
+	
+	<button class="collapsible">Digital Copies</button>
+		<div class ="content">
+		<p>	</br>
+<a href="../resources/PermitNamingConvention.pdf" class="DocButton">Permit Naming Convention</a>
+<a href="../resources/PermitSubmissionProtocol.pdf" class="DocButton">Permit Submission Protocol</a>
+		</p>
+		</br>
+		</p>
+		
+		</div>	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsibleSideNav");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+	
+</body>

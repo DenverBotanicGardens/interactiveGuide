@@ -1,0 +1,119 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Processing Plant Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="plantSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="plantSpecimenData.html"  >Data Submission</a>
+	<a href="plantSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="plantSpecimenImaging.html"  >Specimen Imaging</a>
+	<a href="plantSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="plantTransfer.html"  >Specimen Transfers</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Processing Vascular Plant Specimens</h1>
+	<img src="../media/KHDProcessing.jpg" class="sideNavimg2"></img>
+<p>Specimens coming into the herbarium must follow a particular workflow depending on if they were collected by staff/associates or by non staff.
+		</br>
+		</br>
+		Whether the specimen has been dried or not is also a factor that imapacts how to process incoming specimens.
+		</br>
+		</br>
+		Before specimens are frozen and mounted, a label must be made.</br>
+		</br>
+		All incoming specimens must be frozen to eliminate any pests or pathogens from being introduced into the herbarium</br>
+		</br>
+		Specimens are then mounted, barcoded, imaged, and filed.
+	</p>
+	
+	<button class="collapsible">Incoming Specimens</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_IncomingSpecimen_StaffOrAssociate.pdf" class="DocButton">Incoming Specimens Staff Collections Workflow</a>
+	</br>
+	</br>
+	</br>
+	</br>
+	<a href= "../resources/KHD_IncomingSpecimen_NonStaff_Dried_Workflow.pdf" class="DocButton">Incoming Specimens Non-Staff Collections Dried Workflow</a>
+	<a href= "../resources/KHD_IncomingSpecimen_NonStaff_Fresh_Workflow.pdf" class="DocButton">Incoming Specimens Non-Staff Collections Fresh Workflow</a>
+	</br></br></br></br>
+	<a href= "../resources/KHD_SpecimenDrying_Protocol.pdf"" class="DocButton">Drying Plant Specimens Protocol</a>
+	<a href= "../resources/KHD_SpecimenFreezing_Protocol.pdf" class="DocButton">Freezing Plant Specimens Protocol</a>
+		</br></br></br></br>
+	<a href="../resources/CertificateOfDonation_Form.pdf" class="DocButton">Receive Specimen Donation</a>
+	</br></br>
+		</p>
+		</div>
+	
+	
+<button class="collapsible">Specimen Labels</button>
+		<div class ="content">
+		<p>	</br>
+	<a href= "../resources/KHD_ExportingData_SpecimenLabels_Protocol.pdf" class="DocButton">Exporting Data for Specimen Labels Protocol</a>
+	<a href= "../resources/KHD_CreatingSpecimenLabels_Protocol.pdf" class="DocButton">Creating Plant Specimen Labels Protocol</a>
+	</br></br>
+		</p>
+		
+		</div>	
+	
+	<button class="collapsible">Mounting Specimens</button>
+		<div class ="content">
+		<p>	</br>
+		<a href= "../resources/KHD_SpecimenProcessing_Protocol.pdf" class="DocButton">Plant Specimen Processing Protocol</a>
+	<a href= "../resources/KHD_SpecimenProcessing_Workflow.pdf" class="DocButton">Plant Specimen Processing Workflow</a>
+	<a href = "file:///Q:/Research/Data_Management/InteractiveGuideToAssetManagement/LinkedResources/KHD_Collecting&ProcessingCacti_Protocol.pdf" class="DocButton">Processing Cacti</a>				</br></br>
+		</p>
+		
+		</div>	
+
+	
+	
+	
+		
+	<button class="collapsible">Barcoding Specimens</button>
+		<div class ="content">
+		<p>	</br>
+		<a href= "../resources/KHD_BarcodingSpecimens_Workflow.pdf" class="DocButton">Barcoding Plant Specimens Workflow</a>
+				</br></br>
+		</p>	
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>

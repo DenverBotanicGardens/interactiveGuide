@@ -1,0 +1,66 @@
+<!DOCTYPE = html>
+<html	lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
+	<title>Collecting Arthropod Specimens</title>
+</head>
+
+<body>
+<div class = "sidenav">
+	<img src="../media/dbgInvert.jpg" class="sidenavLogo"></img>
+	<a href="arthropodSpecimenCollecting.html"  >Specimen Collection</a>
+	<a href="arthropodSpecimenData.html"  >Data Submission</a>
+	<a href="arthropodSpecimenProcessing.html"  >Specimen Processing</a>
+	<a href="arthropodSpecimenFiling.html"  >Specimen Filing</a>
+	<a href="../../home.html" class="sidenavHome">Home</a>
+</div>
+
+<div class = "main">
+	<h1>Collecting Arthropod Specimens</h1>
+	<img src="../media/DBGACollecting.jpg" class="sidenavImg2" ></img>
+	<p>
+	Before collecting  voucher specimens it is important to familiarize yourself with the required methods and data collection.
+	</br>
+	</br>
+</p>
+
+	
+	
+	<button class="collapsible">Protocols</button>
+		<div class ="content">
+		<p>	</br>
+<a href= "../resources/DBGA_SpecimenCollection_Protocol.pdf" class="DocButton">Specimen Collection Protocol</a>
+		</p>
+		
+		</div>	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>	
+
+	
+</body>
